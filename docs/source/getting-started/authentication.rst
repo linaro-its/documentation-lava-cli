@@ -88,10 +88,20 @@ Commands that do not require authentication
 
 A few commands run entirely locally and do not authenticate:
 
-* ``lava-cli identities`` (managing configuration profiles)
+* ``lava-cli identities list`` (listing saved profiles), ``lava-cli identities
+  show`` and ``lava-cli identities delete``
 * ``lava-cli system version`` and ``lava-cli system api``
 * ``lava-cli utils`` (local log formatting)
 * ``lava-cli ci examples`` (printing CI pipeline snippets)
+
+Some ``identities`` subcommands *do* authenticate, even though they are skipped
+by the automatic authentication step above: they contact SPIRE themselves to
+discover or validate subscriptions. These require credentials:
+
+* ``lava-cli identities add`` (authenticates to discover or validate the
+  subscription before saving it)
+* ``lava-cli identities list --discover`` (authenticates to list the
+  subscriptions your account holds LAVA rights for)
 
 Debugging authentication
 ------------------------
