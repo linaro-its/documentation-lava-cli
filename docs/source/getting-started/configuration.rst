@@ -31,6 +31,19 @@ A profile file looks like this:
      subscription_id: sub:0f9e987e-4f48-a065-cb6719915747aabb
      subscription_name: Staging Team
 
+Each top-level key (``default``, ``staging-team``) is the **profile name** you
+choose and pass to ``--identity``. The ``subscription_name`` underneath is the
+human-readable name of the subscription as returned by SPIRE, which typically
+contains spaces; it is stored for display only and is never used to select a
+profile.
+
+.. note:: The profile name is used both as the ``--identity`` value and as the
+   key in the config file. It must start with a letter or digit and may then
+   contain only letters, digits, hyphens (``-``), underscores (``_``) and dots
+   (``.``); spaces and other characters are rejected. This keeps names usable
+   unquoted on the command line. Examples of valid names are ``default``,
+   ``staging-team`` and ``ci``.
+
 Selecting a profile
 -------------------
 
