@@ -1,5 +1,5 @@
-``lava jobs results``
-=====================
+``lava-cli jobs results``
+=========================
 
 Fetch the test results for a job. Optionally narrow the output to a single
 test suite, or a single test case within a suite.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs results <job_id> [test_suite [test_case]] [flags]
+   lava-cli jobs results <job_id> [test_suite [test_case]] [flags]
 
 Arguments
 ---------
@@ -50,13 +50,13 @@ Examples
 .. code-block:: bash
 
    # All results for a job
-   lava jobs results 412122
+   lava-cli jobs results 412122
 
    # Only the "smoke-tests" suite
-   lava jobs results 412122 smoke-tests
+   lava-cli jobs results 412122 smoke-tests
 
    # A single test case within a suite
-   lava jobs results 412122 smoke-tests boot
+   lava-cli jobs results 412122 smoke-tests boot
 
 Output
 ------

@@ -1,5 +1,5 @@
-``lava device-types list``
-==========================
+``lava-cli device-types list``
+==============================
 
 List the LAVA device types available to the current subscription, along with
 how many devices of each type exist.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava device-types list [flags]
+   lava-cli device-types list [flags]
 
 Flags
 -----
@@ -30,8 +30,8 @@ Examples
 
 .. code-block:: bash
 
-   lava device-types list
-   lava device-types list --json
+   lava-cli device-types list
+   lava-cli device-types list --json
 
 Output
 ------

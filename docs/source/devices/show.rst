@@ -1,5 +1,5 @@
-``lava devices show``
-=====================
+``lava-cli devices show``
+=========================
 
 Show the full details of a single LAVA device.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava devices show <hostname> [flags]
+   lava-cli devices show <hostname> [flags]
 
 Arguments
 ---------
@@ -41,8 +41,8 @@ Examples
 
 .. code-block:: bash
 
-   lava devices show qemu-01
-   lava devices show qemu-01 --json
+   lava-cli devices show qemu-01
+   lava-cli devices show qemu-01 --json
 
 Output
 ------

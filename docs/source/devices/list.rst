@@ -1,5 +1,5 @@
-``lava devices list``
-=====================
+``lava-cli devices list``
+=========================
 
 List the LAVA devices in the current subscription.
 
@@ -14,7 +14,7 @@ Usage
 
 .. code-block:: text
 
-   lava devices list [flags]
+   lava-cli devices list [flags]
 
 Flags
 -----
@@ -40,13 +40,13 @@ Examples
 .. code-block:: bash
 
    # Full listing with health and state
-   lava devices list
+   lava-cli devices list
 
    # Just the hostnames, fast
-   lava devices list --fast
+   lava-cli devices list --fast
 
    # Include retired devices
-   lava devices list --all
+   lava-cli devices list --all
 
 Output
 ------

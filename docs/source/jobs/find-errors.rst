@@ -1,5 +1,5 @@
-``lava jobs find-errors``
-=========================
+``lava-cli jobs find-errors``
+=============================
 
 Fetch just the error-level log entries for a job. This is a quick way to see
 what went wrong without scrolling through the full log.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs find-errors <job_id> [flags]
+   lava-cli jobs find-errors <job_id> [flags]
 
 Arguments
 ---------
@@ -44,8 +44,8 @@ Examples
 
 .. code-block:: bash
 
-   lava jobs find-errors 412122
-   lava jobs find-errors 412122 --json
+   lava-cli jobs find-errors 412122
+   lava-cli jobs find-errors 412122 --json
 
 Output
 ------

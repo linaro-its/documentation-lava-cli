@@ -1,5 +1,5 @@
-``lava events wait``
-====================
+``lava-cli events wait``
+========================
 
 Poll a device or worker until it reaches a target state and/or health, or a
 timeout elapses. This command has two subcommands: ``device`` and ``worker``.
@@ -30,14 +30,14 @@ Shared flags
 If both ``--state`` and ``--health`` are left empty, the very first
 observation satisfies the condition.
 
-``lava events wait device``
----------------------------
+``lava-cli events wait device``
+-------------------------------
 
 Wait for a device to reach the target state/health.
 
 .. code-block:: text
 
-   lava events wait device <hostname> [flags]
+   lava-cli events wait device <hostname> [flags]
 
 .. list-table::
    :header-rows: 1
@@ -53,16 +53,16 @@ Example:
 .. code-block:: bash
 
    # Wait up to 10 minutes for a device to come back to Good health
-   lava events wait device qemu-01 --health Good --timeout 10m
+   lava-cli events wait device qemu-01 --health Good --timeout 10m
 
-``lava events wait worker``
----------------------------
+``lava-cli events wait worker``
+-------------------------------
 
 Wait for a worker to reach the target state/health.
 
 .. code-block:: text
 
-   lava events wait worker <hostname> [flags]
+   lava-cli events wait worker <hostname> [flags]
 
 .. list-table::
    :header-rows: 1
@@ -77,7 +77,7 @@ Example:
 
 .. code-block:: bash
 
-   lava events wait worker worker-01 --state Online
+   lava-cli events wait worker worker-01 --state Online
 
 Output and exit codes
 ---------------------

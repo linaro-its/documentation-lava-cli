@@ -1,5 +1,5 @@
-``lava workers list``
-=====================
+``lava-cli workers list``
+=========================
 
 List the LAVA shared workers accessible to the current subscription.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava workers list [flags]
+   lava-cli workers list [flags]
 
 Flags
 -----
@@ -29,8 +29,8 @@ Examples
 
 .. code-block:: bash
 
-   lava workers list
-   lava workers list --json
+   lava-cli workers list
+   lava-cli workers list --json
 
 Output
 ------

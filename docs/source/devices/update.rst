@@ -1,5 +1,5 @@
-``lava devices update``
-=======================
+``lava-cli devices update``
+===========================
 
 Update the properties of an existing device. At least one field flag must be
 given; only the fields you specify are changed.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava devices update <hostname> [flags]
+   lava-cli devices update <hostname> [flags]
 
 Arguments
 ---------
@@ -44,8 +44,8 @@ Examples
 
 .. code-block:: bash
 
-   lava devices update qemu-05 --description "Retired soon"
-   lava devices update qemu-05 --worker worker-02
+   lava-cli devices update qemu-05 --description "Retired soon"
+   lava-cli devices update qemu-05 --worker worker-02
 
 Output
 ------

@@ -1,5 +1,5 @@
-``lava identities list``
-========================
+``lava-cli identities list``
+============================
 
 List the configuration profiles stored on this machine.
 
@@ -13,7 +13,7 @@ Usage
 
 .. code-block:: text
 
-   lava identities list [flags]
+   lava-cli identities list [flags]
 
 Flags
 -----
@@ -39,13 +39,13 @@ Examples
 .. code-block:: bash
 
    # List locally saved profiles
-   lava identities list
+   lava-cli identities list
 
    # Discover subscriptions your account can use with LAVA
-   lava identities list --discover
+   lava-cli identities list --discover
 
    # Machine-readable output
-   lava identities list --json
+   lava-cli identities list --json
 
 Output
 ------
@@ -55,7 +55,7 @@ printed. With ``--discover``, a table of ``SUBSCRIPTION ID``, ``NAME`` and
 ``PLAN`` is printed.
 
 If no profiles are configured, the command suggests running
-``lava identities add``.
+``lava-cli identities add``.
 
 .. note:: **TODO:** Add example table output for both the default listing and
    the ``--discover`` listing.

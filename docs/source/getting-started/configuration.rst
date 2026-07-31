@@ -40,10 +40,10 @@ uses. When omitted, the profile named ``default`` is used.
 .. code-block:: bash
 
    # Uses the "default" profile
-   lava devices list
+   lava-cli devices list
 
    # Uses the "staging-team" profile
-   lava --identity staging-team devices list
+   lava-cli --identity staging-team devices list
 
 The subscription stored in a profile can always be overridden for a single
 command with ``--subscription`` or the ``LAVA_CLI_SUBSCRIPTION`` environment

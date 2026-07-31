@@ -1,5 +1,5 @@
-``lava jobs validate``
-======================
+``lava-cli jobs validate``
+==========================
 
 Validate a job definition without submitting it. LAVA checks that the
 definition is well-formed and schedulable and returns a message describing the
@@ -10,7 +10,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs validate <definition-file> [flags]
+   lava-cli jobs validate <definition-file> [flags]
 
 Arguments
 ---------
@@ -42,8 +42,8 @@ Examples
 
 .. code-block:: bash
 
-   lava jobs validate my-test.yaml
-   lava jobs validate my-test.yaml --device qemu-01
+   lava-cli jobs validate my-test.yaml
+   lava-cli jobs validate my-test.yaml --device qemu-01
 
 Output
 ------

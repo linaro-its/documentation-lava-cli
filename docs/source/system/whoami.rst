@@ -1,5 +1,5 @@
-``lava system whoami``
-======================
+``lava-cli system whoami``
+==========================
 
 Show the identity in use and the subscriptions your account can access. This
 is a quick way to confirm that your credentials and active subscription are
@@ -10,7 +10,7 @@ Usage
 
 .. code-block:: text
 
-   lava system whoami [flags]
+   lava-cli system whoami [flags]
 
 Flags
 -----
@@ -31,8 +31,8 @@ Examples
 
 .. code-block:: bash
 
-   lava system whoami
-   lava --identity staging-team system whoami --json
+   lava-cli system whoami
+   lava-cli --identity staging-team system whoami --json
 
 Output
 ------

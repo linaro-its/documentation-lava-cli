@@ -1,5 +1,5 @@
-``lava identities delete``
-==========================
+``lava-cli identities delete``
+==============================
 
 Remove a saved configuration profile. This only affects the local config
 file; it does not change anything on the server.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava identities delete <name>
+   lava-cli identities delete <name>
 
 Arguments
 ---------
@@ -28,7 +28,7 @@ Examples
 
 .. code-block:: bash
 
-   lava identities delete staging-team
+   lava-cli identities delete staging-team
 
 Output
 ------

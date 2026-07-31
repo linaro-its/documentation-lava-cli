@@ -1,5 +1,5 @@
-``lava jobs run``
-=================
+``lava-cli jobs run``
+=====================
 
 Submit a single job definition, stream its logs until the job finishes, and
 exit with a code that reflects the *job result*.
@@ -9,7 +9,7 @@ if a LAVA job passed:
 
 .. code-block:: bash
 
-   lava jobs run my-test.yaml && ./deploy.sh
+   lava-cli jobs run my-test.yaml && ./deploy.sh
 
 Unlike :doc:`submit`, whose exit code only reflects submission success, the
 exit code here reflects the job outcome (see the table in
@@ -20,7 +20,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs run <definition-file> [flags]
+   lava-cli jobs run <definition-file> [flags]
 
 Arguments
 ---------
@@ -67,10 +67,10 @@ Examples
 .. code-block:: bash
 
    # Gate a deploy on the job passing
-   lava jobs run smoke-test.yaml && echo "safe to deploy"
+   lava-cli jobs run smoke-test.yaml && echo "safe to deploy"
 
    # Fail the script if the job does not finish within 30 minutes
-   lava jobs run long-test.yaml --timeout 30m
+   lava-cli jobs run long-test.yaml --timeout 30m
 
 Exit codes
 ----------

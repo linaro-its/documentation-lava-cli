@@ -1,5 +1,5 @@
-``lava jobs wait``
-==================
+``lava-cli jobs wait``
+======================
 
 Poll a job until it reaches a terminal state (Complete, Canceled or error),
 without streaming its logs. State transitions are reported to stderr as they
@@ -10,7 +10,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs wait <job_id> [flags]
+   lava-cli jobs wait <job_id> [flags]
 
 Arguments
 ---------
@@ -46,8 +46,8 @@ Examples
 
 .. code-block:: bash
 
-   lava jobs wait 412122
-   lava jobs wait 412122 --timeout 2h --interval 15s
+   lava-cli jobs wait 412122
+   lava-cli jobs wait 412122 --timeout 2h --interval 15s
 
 Output and exit codes
 ---------------------

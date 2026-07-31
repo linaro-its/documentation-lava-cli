@@ -1,5 +1,5 @@
-``lava system version``
-=======================
+``lava-cli system version``
+===========================
 
 Intended to show the LAVA server version.
 
@@ -11,6 +11,6 @@ To see the *CLI* version rather than the server version, use the global
 
 .. code-block:: bash
 
-   lava --version
+   lava-cli --version
 
 .. note:: **TODO:** Document the output once the command is implemented.

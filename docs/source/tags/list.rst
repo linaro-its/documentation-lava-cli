@@ -1,5 +1,5 @@
-``lava tags list``
-==================
+``lava-cli tags list``
+======================
 
 List the tags configured on a device.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava tags list --device <hostname> [flags]
+   lava-cli tags list --device <hostname> [flags]
 
 Flags
 -----
@@ -31,8 +31,8 @@ Examples
 
 .. code-block:: bash
 
-   lava tags list --device qemu-01
-   lava tags list -d qemu-01 --json
+   lava-cli tags list --device qemu-01
+   lava-cli tags list -d qemu-01 --json
 
 Output
 ------

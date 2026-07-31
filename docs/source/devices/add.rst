@@ -1,5 +1,5 @@
-``lava devices add``
-====================
+``lava-cli devices add``
+========================
 
 Add a new device to the current subscription.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava devices add --hostname <name> --device-type <slug> --worker <host> [flags]
+   lava-cli devices add --hostname <name> --device-type <slug> --worker <host> [flags]
 
 Flags
 -----
@@ -37,7 +37,7 @@ Examples
 
 .. code-block:: bash
 
-   lava devices add \
+   lava-cli devices add \
      --hostname qemu-05 \
      --device-type qemu \
      --worker worker-01 \

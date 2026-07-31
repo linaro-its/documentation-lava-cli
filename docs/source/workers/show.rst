@@ -1,5 +1,5 @@
-``lava workers show``
-=====================
+``lava-cli workers show``
+=========================
 
 Show the full details of a single LAVA shared worker.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava workers show <hostname> [flags]
+   lava-cli workers show <hostname> [flags]
 
 Arguments
 ---------
@@ -41,8 +41,8 @@ Examples
 
 .. code-block:: bash
 
-   lava workers show worker-01
-   lava workers show worker-01 --yaml
+   lava-cli workers show worker-01
+   lava-cli workers show worker-01 --yaml
 
 Output
 ------

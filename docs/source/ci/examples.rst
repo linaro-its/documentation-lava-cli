@@ -1,5 +1,5 @@
-``lava ci examples``
-====================
+``lava-cli ci examples``
+========================
 
 Print ready-to-use CI pipeline snippets for the supported callback strategies.
 The snippets are generated to match your installed binary — they use the
@@ -11,7 +11,7 @@ Usage
 
 .. code-block:: text
 
-   lava ci examples [flags]
+   lava-cli ci examples [flags]
 
 Flags
 -----
@@ -37,13 +37,13 @@ Examples
 .. code-block:: bash
 
    # Print every example
-   lava ci examples
+   lava-cli ci examples
 
    # Just the GitLab example
-   lava ci examples --gitlab
+   lava-cli ci examples --gitlab
 
    # Save the GitHub dispatch example to a file
-   lava ci examples --github-dispatch > lava-workflow.yml
+   lava-cli ci examples --github-dispatch > lava-workflow.yml
 
 What each example does
 ----------------------

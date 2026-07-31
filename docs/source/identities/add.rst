@@ -1,5 +1,5 @@
-``lava identities add``
-=======================
+``lava-cli identities add``
+===========================
 
 Add a new configuration profile, or update an existing one, that ties a
 profile name to a LAVA subscription.
@@ -23,7 +23,7 @@ Usage
 
 .. code-block:: text
 
-   lava identities add [flags]
+   lava-cli identities add [flags]
 
 Flags
 -----
@@ -47,13 +47,13 @@ Examples
 .. code-block:: bash
 
    # Interactive: pick a subscription from a list and save it as "default"
-   lava identities add
+   lava-cli identities add
 
    # Interactive: save the chosen subscription under a specific profile name
-   lava identities add --name staging-team
+   lava-cli identities add --name staging-team
 
    # Non-interactive: validate and save a known subscription ID
-   lava identities add --name ci --subscription sub:464ef0f9-e987-4f48-a065-cb6719915747
+   lava-cli identities add --name ci --subscription sub:464ef0f9-e987-4f48-a065-cb6719915747
 
 Notes
 -----

@@ -1,5 +1,5 @@
-``lava jobs definition``
-========================
+``lava-cli jobs definition``
+============================
 
 Print the job definition YAML exactly as it was submitted to LAVA. This is
 useful for reproducing a job or for inspecting what was actually run.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs definition <job_id> [flags]
+   lava-cli jobs definition <job_id> [flags]
 
 Arguments
 ---------
@@ -41,10 +41,10 @@ Examples
 .. code-block:: bash
 
    # Print the definition
-   lava jobs definition 412122
+   lava-cli jobs definition 412122
 
    # Save it to a file to resubmit later
-   lava jobs definition 412122 > job.yaml
+   lava-cli jobs definition 412122 > job.yaml
 
 Output
 ------

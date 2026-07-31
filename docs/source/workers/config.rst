@@ -1,5 +1,5 @@
-``lava workers config``
-=======================
+``lava-cli workers config``
+===========================
 
 Manage a worker's configuration.
 
@@ -10,10 +10,10 @@ Manage a worker's configuration.
 Subcommands
 -----------
 
-``lava workers config get <hostname>``
+``lava-cli workers config get <hostname>``
    Intended to retrieve a worker's configuration.
 
-``lava workers config set <hostname> <file>``
+``lava-cli workers config set <hostname> <file>``
    Intended to set a worker's configuration from a file.
 
 .. note:: **TODO:** Document the behaviour, flags and output once these

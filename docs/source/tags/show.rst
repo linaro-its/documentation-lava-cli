@@ -1,5 +1,5 @@
-``lava tags show``
-==================
+``lava-cli tags show``
+======================
 
 Show a single tag configured on a device.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava tags show <tag> --device <hostname> [flags]
+   lava-cli tags show <tag> --device <hostname> [flags]
 
 Arguments
 ---------
@@ -43,7 +43,7 @@ Examples
 
 .. code-block:: bash
 
-   lava tags show arm64 --device qemu-01
+   lava-cli tags show arm64 --device qemu-01
 
 Output
 ------

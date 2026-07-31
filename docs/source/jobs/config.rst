@@ -1,5 +1,5 @@
-``lava jobs config``
-====================
+``lava-cli jobs config``
+========================
 
 Retrieve the device configuration that was used while a job ran. By default
 each configuration document is written to a file in the destination
@@ -21,7 +21,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs config <job_id> [flags]
+   lava-cli jobs config <job_id> [flags]
 
 Arguments
 ---------
@@ -62,10 +62,10 @@ Examples
 .. code-block:: bash
 
    # Write config files into ./job-412122/
-   lava jobs config 412122 --dest job-412122
+   lava-cli jobs config 412122 --dest job-412122
 
    # Print everything as JSON instead of writing files
-   lava jobs config 412122 --json
+   lava-cli jobs config 412122 --json
 
 Output
 ------

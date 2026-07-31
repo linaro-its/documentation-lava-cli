@@ -1,5 +1,5 @@
-``lava jobs resubmit``
-======================
+``lava-cli jobs resubmit``
+==========================
 
 Resubmit an existing job. LAVA creates a new job from the original job's
 definition and returns the new job ID. By default the new job's logs are
@@ -10,7 +10,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs resubmit <job_id> [flags]
+   lava-cli jobs resubmit <job_id> [flags]
 
 Arguments
 ---------
@@ -55,10 +55,10 @@ Examples
 .. code-block:: bash
 
    # Resubmit and follow the new job
-   lava jobs resubmit 412122
+   lava-cli jobs resubmit 412122
 
    # Resubmit and return immediately with the new job ID
-   lava jobs resubmit 412122 --no-follow
+   lava-cli jobs resubmit 412122 --no-follow
 
 Output
 ------

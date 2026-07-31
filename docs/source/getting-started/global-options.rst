@@ -66,6 +66,6 @@ Every command and subcommand supports ``--help``:
 
 .. code-block:: bash
 
-   lava --help
-   lava jobs --help
-   lava jobs submit --help
+   lava-cli --help
+   lava-cli jobs --help
+   lava-cli jobs submit --help

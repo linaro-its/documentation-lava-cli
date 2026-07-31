@@ -1,5 +1,5 @@
-``lava device-types update``
-============================
+``lava-cli device-types update``
+================================
 
 Update the metadata of an existing device type. Only the fields you specify
 on the command line are changed; any field you leave out is left untouched.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava device-types update <name> [flags]
+   lava-cli device-types update <name> [flags]
 
 Arguments
 ---------
@@ -54,8 +54,8 @@ Examples
 
 .. code-block:: bash
 
-   lava device-types update my-board --description "Updated description"
-   lava device-types update my-board --tags arm64,ci
+   lava-cli device-types update my-board --description "Updated description"
+   lava-cli device-types update my-board --tags arm64,ci
 
 Output
 ------

@@ -1,5 +1,5 @@
-``lava jobs list``
-==================
+``lava-cli jobs list``
+======================
 
 List jobs in the current subscription, or jobs for a specific device.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs list [flags]
+   lava-cli jobs list [flags]
 
 Flags
 -----
@@ -47,16 +47,16 @@ Examples
 .. code-block:: bash
 
    # Most recent 25 jobs in the subscription
-   lava jobs list
+   lava-cli jobs list
 
    # Jobs for one device, most recent 50
-   lava jobs list --device qemu-01 --count 50
+   lava-cli jobs list --device qemu-01 --count 50
 
    # Only running jobs
-   lava jobs list --state Running
+   lava-cli jobs list --state Running
 
    # Jobs submitted in the last hour, with extra detail
-   lava jobs list --since 60 --verbose
+   lava-cli jobs list --since 60 --verbose
 
 Output
 ------

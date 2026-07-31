@@ -1,5 +1,5 @@
-``lava jobs cancel``
-====================
+``lava-cli jobs cancel``
+========================
 
 Cancel one or more running or queued jobs. Multiple job IDs may be given; each
 is cancelled independently and failures are reported per job.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs cancel <job_id> [job_id...] [flags]
+   lava-cli jobs cancel <job_id> [job_id...] [flags]
 
 Arguments
 ---------
@@ -41,10 +41,10 @@ Examples
 .. code-block:: bash
 
    # Cancel a single job
-   lava jobs cancel 412122
+   lava-cli jobs cancel 412122
 
    # Cancel several at once
-   lava jobs cancel 412122 412123 412124
+   lava-cli jobs cancel 412122 412123 412124
 
 Output
 ------

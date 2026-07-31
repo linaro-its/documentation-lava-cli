@@ -1,5 +1,5 @@
-``lava system api``
-===================
+``lava-cli system api``
+=======================
 
 Intended to show the LAVA API version.
 

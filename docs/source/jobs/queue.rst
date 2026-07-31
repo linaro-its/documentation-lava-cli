@@ -1,5 +1,5 @@
-``lava jobs queue``
-===================
+``lava-cli jobs queue``
+=======================
 
 List the queued and scheduled jobs for the current subscription, optionally
 filtered to a single device type.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs queue [device-type] [flags]
+   lava-cli jobs queue [device-type] [flags]
 
 Arguments
 ---------
@@ -51,13 +51,13 @@ Examples
 .. code-block:: bash
 
    # All queued jobs in the subscription
-   lava jobs queue
+   lava-cli jobs queue
 
    # Queued jobs for a single device type
-   lava jobs queue qemu
+   lava-cli jobs queue qemu
 
    # Same, using the flag form
-   lava jobs queue --device-type qemu --count 50
+   lava-cli jobs queue --device-type qemu --count 50
 
 Output
 ------

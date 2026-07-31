@@ -1,5 +1,5 @@
-``lava jobs submit``
-====================
+``lava-cli jobs submit``
+========================
 
 Submit one or more job definitions to LAVA and, by default, stream the logs
 of each job until it reaches a terminal state.
@@ -13,7 +13,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs submit <definition-file> [definition-file...] [flags]
+   lava-cli jobs submit <definition-file> [definition-file...] [flags]
 
 Arguments
 ---------
@@ -72,16 +72,16 @@ Examples
 .. code-block:: bash
 
    # Submit and stream logs
-   lava jobs submit my-test.yaml
+   lava-cli jobs submit my-test.yaml
 
    # Submit to a specific device without following
-   lava jobs submit my-test.yaml --device qemu-01 --no-follow
+   lava-cli jobs submit my-test.yaml --device qemu-01 --no-follow
 
    # Submit several definitions at once
-   lava jobs submit test-a.yaml test-b.yaml
+   lava-cli jobs submit test-a.yaml test-b.yaml
 
    # Submit and print the full job URL
-   lava jobs submit my-test.yaml --no-follow --url
+   lava-cli jobs submit my-test.yaml --no-follow --url
 
 CI callbacks
 ------------

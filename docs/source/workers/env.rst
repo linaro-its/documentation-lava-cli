@@ -1,5 +1,5 @@
-``lava workers env``
-====================
+``lava-cli workers env``
+========================
 
 Manage a worker's environment.
 
@@ -10,10 +10,10 @@ Manage a worker's environment.
 Subcommands
 -----------
 
-``lava workers env get <hostname>``
+``lava-cli workers env get <hostname>``
    Intended to retrieve a worker's environment.
 
-``lava workers env set <hostname> <file>``
+``lava-cli workers env set <hostname> <file>``
    Intended to set a worker's environment from a file.
 
 .. note:: **TODO:** Document the behaviour, flags and output once these

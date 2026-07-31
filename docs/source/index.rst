@@ -15,10 +15,10 @@ which devices, workers and jobs you can see and act on.
    permissions held in your authorisation token. If a command returns a
    permission error, your subscription does not grant that capability.
 
-.. note:: The documented commands always reference ``lava``. Depending on
-   which build you have installed this may instead be ``staging-lava``
-   (staging) or ``lava-cli`` (a local development build). Substitute the name
-   of your binary where appropriate.
+.. note:: The documented commands always reference ``lava-cli``, which is the
+   name of the production binary. If you have installed the staging build, the
+   binary is named ``staging-lava-cli`` instead. Substitute the name of your
+   binary where appropriate.
 
 Start with the :ref:`getting started <getting-started>` section to install
 the CLI and configure your credentials, then explore the command reference

@@ -1,5 +1,5 @@
-``lava jobs show``
-==================
+``lava-cli jobs show``
+======================
 
 Show the details of a single job.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs show <job_id> [flags]
+   lava-cli jobs show <job_id> [flags]
 
 Arguments
 ---------
@@ -44,8 +44,8 @@ Examples
 
 .. code-block:: bash
 
-   lava jobs show 412122
-   lava jobs show 412122 --json
+   lava-cli jobs show 412122
+   lava-cli jobs show 412122 --json
 
 Output
 ------

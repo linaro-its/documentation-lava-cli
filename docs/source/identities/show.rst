@@ -1,5 +1,5 @@
-``lava identities show``
-========================
+``lava-cli identities show``
+============================
 
 Show the details of a single saved configuration profile.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava identities show <name> [flags]
+   lava-cli identities show <name> [flags]
 
 Arguments
 ---------
@@ -41,8 +41,8 @@ Examples
 
 .. code-block:: bash
 
-   lava identities show default
-   lava identities show staging-team --json
+   lava-cli identities show default
+   lava-cli identities show staging-team --json
 
 Output
 ------

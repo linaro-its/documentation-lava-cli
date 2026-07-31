@@ -1,5 +1,5 @@
-``lava device-types add``
-=========================
+``lava-cli device-types add``
+=============================
 
 Create a new device type. This requires elevated permissions: your token must
 hold either ``lms:admin`` or ``lms:create:devicetype``. If neither is present,
@@ -10,7 +10,7 @@ Usage
 
 .. code-block:: text
 
-   lava device-types add --name <name> [flags]
+   lava-cli device-types add --name <name> [flags]
 
 Flags
 -----
@@ -43,7 +43,7 @@ Examples
 
 .. code-block:: bash
 
-   lava device-types add \
+   lava-cli device-types add \
      --name my-board \
      --verbose-name "My Board rev B" \
      --description "Internal test board" \

@@ -49,10 +49,10 @@ command history.
    # Using environment variables (recommended)
    export LAVA_CLI_USER="you@example.com"
    export LAVA_CLI_PAT="<your-personal-access-token>"
-   lava devices list
+   lava-cli devices list
 
    # Using flags
-   lava --email you@example.com --pat <token> devices list
+   lava-cli --email you@example.com --pat <token> devices list
 
 If neither the flags nor the environment variables are set for a command that
 needs to reach the API, the CLI stops with an error explaining that an email
@@ -81,17 +81,17 @@ To discover which subscriptions your account can use with LAVA, run:
 
 .. code-block:: bash
 
-   lava identities list --discover
+   lava-cli identities list --discover
 
 Commands that do not require authentication
 -------------------------------------------
 
 A few commands run entirely locally and do not authenticate:
 
-* ``lava identities`` (managing configuration profiles)
-* ``lava system version`` and ``lava system api``
-* ``lava utils`` (local log formatting)
-* ``lava ci examples`` (printing CI pipeline snippets)
+* ``lava-cli identities`` (managing configuration profiles)
+* ``lava-cli system version`` and ``lava-cli system api``
+* ``lava-cli utils`` (local log formatting)
+* ``lava-cli ci examples`` (printing CI pipeline snippets)
 
 Debugging authentication
 ------------------------
@@ -102,4 +102,4 @@ useful when diagnosing authentication or permission problems.
 
 .. code-block:: bash
 
-   lava --debug devices list
+   lava-cli --debug devices list

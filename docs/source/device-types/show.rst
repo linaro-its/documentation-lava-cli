@@ -1,5 +1,5 @@
-``lava device-types show``
-==========================
+``lava-cli device-types show``
+==============================
 
 Show the metadata for a single device type.
 
@@ -8,7 +8,7 @@ Usage
 
 .. code-block:: text
 
-   lava device-types show <name> [flags]
+   lava-cli device-types show <name> [flags]
 
 Arguments
 ---------
@@ -41,8 +41,8 @@ Examples
 
 .. code-block:: bash
 
-   lava device-types show qemu
-   lava device-types show qemu --yaml
+   lava-cli device-types show qemu
+   lava-cli device-types show qemu --yaml
 
 Output
 ------

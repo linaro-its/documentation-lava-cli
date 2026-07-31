@@ -24,13 +24,13 @@ A typical first session looks like this:
    export LAVA_CLI_PAT="<your-personal-access-token>"
 
    # Discover which subscriptions you can use with LAVA
-   lava identities list --discover
+   lava-cli identities list --discover
 
    # Save a subscription as a named profile
-   lava identities add
+   lava-cli identities add
 
    # Confirm who you are and what you can access
-   lava system whoami
+   lava-cli system whoami
 
    # List the devices in your subscription
-   lava devices list
+   lava-cli devices list

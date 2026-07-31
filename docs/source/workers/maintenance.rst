@@ -1,5 +1,5 @@
-``lava workers maintenance``
-============================
+``lava-cli workers maintenance``
+================================
 
 Put a LAVA shared worker into maintenance mode. While a worker is in
 maintenance, LAVA does not schedule new jobs to the devices it manages.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava workers maintenance <hostname>
+   lava-cli workers maintenance <hostname>
 
 Arguments
 ---------
@@ -28,7 +28,7 @@ Examples
 
 .. code-block:: bash
 
-   lava workers maintenance worker-01
+   lava-cli workers maintenance worker-01
 
 Output
 ------

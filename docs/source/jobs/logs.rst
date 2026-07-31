@@ -1,5 +1,5 @@
-``lava jobs logs``
-==================
+``lava-cli jobs logs``
+======================
 
 Fetch the logs for a job. By default the command *follows* the job: it polls
 its status and streams new log lines until the job reaches a terminal state.
@@ -14,7 +14,7 @@ Usage
 
 .. code-block:: text
 
-   lava jobs logs <job_id> [flags]
+   lava-cli jobs logs <job_id> [flags]
 
 Arguments
 ---------
@@ -68,16 +68,16 @@ Examples
 .. code-block:: bash
 
    # Follow a running job's logs
-   lava jobs logs 412122
+   lava-cli jobs logs 412122
 
    # Grab a snapshot of the first 500 lines
-   lava jobs logs 412122 --no-follow --start 0 --end 500
+   lava-cli jobs logs 412122 --no-follow --start 0 --end 500
 
    # Only show device console and error output
-   lava jobs logs 412122 --filters target,error
+   lava-cli jobs logs 412122 --filters target,error
 
    # Raw YAML, for saving to a file
-   lava jobs logs 412122 --no-follow --raw > job.yaml
+   lava-cli jobs logs 412122 --no-follow --raw > job.yaml
 
 Output
 ------

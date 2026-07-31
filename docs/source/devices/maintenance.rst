@@ -1,5 +1,5 @@
-``lava devices maintenance``
-============================
+``lava-cli devices maintenance``
+================================
 
 Set a device's health to ``Maintenance`` or back to ``Good``. Putting a
 device into maintenance stops LAVA from scheduling new jobs onto it.
@@ -9,7 +9,7 @@ Usage
 
 .. code-block:: text
 
-   lava devices maintenance <hostname> [--health Maintenance|Good]
+   lava-cli devices maintenance <hostname> [--health Maintenance|Good]
 
 Arguments
 ---------
@@ -42,10 +42,10 @@ Examples
 .. code-block:: bash
 
    # Take a device out of service
-   lava devices maintenance qemu-05
+   lava-cli devices maintenance qemu-05
 
    # Explicitly return it to service
-   lava devices maintenance qemu-05 --health Good
+   lava-cli devices maintenance qemu-05 --health Good
 
 Output
 ------
