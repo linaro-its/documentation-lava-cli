@@ -51,5 +51,3 @@ A key/value listing of the device's properties: ``hostname``,
 ``device-type``, ``worker``, ``state``, ``health``, ``description``,
 ``pipeline``, ``has-device-dict``, ``current-job`` (the job currently running
 on the device, if any) and ``tags``.
-
-.. note:: **TODO:** Add an example of the key/value output for a device.

@@ -68,7 +68,3 @@ Notes
 * If the target subscription is already stored in another profile, the
   command refuses to save a duplicate and reports which profile holds it.
 * If a subscription has no LAVA permissions, it cannot be saved.
-
-.. note:: **TODO:** Add a captured transcript of the interactive picker
-   (subscription list and prompts) and the confirmation message printed on a
-   successful save.

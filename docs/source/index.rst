@@ -1,18 +1,16 @@
-Linaro LAVA CLI
-###############
+LAVA CLI
+########
 
-``lava-cli`` is a command line tool for interacting with Linaro's LAVA
-Gateway REST API. It submits and manages test jobs, inspects devices and
+``lava-cli`` is a command line tool for interacting with LAVA via subscriptions
+on Linaro's Solutions Hub. It submits and manages test jobs, inspects devices and
 workers, manages device types, and integrates LAVA into CI pipelines.
 
-The CLI authenticates against SPIRE using an email address and personal
-access token (PAT), then exchanges those credentials for a
-subscription-scoped `Biscuit <https://www.biscuitsec.org/>`_ token that
-authorises every subsequent call to the Gateway. A subscription determines
+The CLI authenticates using an email address and personal
+access token (PAT). A subscription determines
 which devices, workers and jobs you can see and act on.
 
 .. note:: The CLI only allows the operations that are permitted by the
-   permissions held in your authorisation token. If a command returns a
+   access granted to you in the subscription. If a command returns a
    permission error, your subscription does not grant that capability.
 
 .. note:: The documented commands always reference ``lava-cli``, which is the

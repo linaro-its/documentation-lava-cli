@@ -14,9 +14,9 @@ When you run a command that calls the API, the CLI performs a three-step
 flow:
 
 #. It exchanges your **email address** and **personal access token (PAT)**
-   with SPIRE for a *full* Biscuit token.
+   with SPIRE for your full authorization token.
 #. It reads the LAVA subscription rights out of that token.
-#. It exchanges the full token for a *subscription-scoped* Biscuit token,
+#. It exchanges the full token for an authorization token that is scoped to the specific subscription,
    which authorises every call the command makes to the Gateway.
 
 Because tokens are always fetched fresh and never written to disk, there is no
@@ -58,9 +58,9 @@ If neither the flags nor the environment variables are set for a command that
 needs to reach the API, the CLI stops with an error explaining that an email
 and PAT are required.
 
-.. note:: **TODO:** Document where and how a user obtains a personal access
-   token (the SPIRE / Solutions Hub portal URL and the steps to create one),
-   and any required token scopes.
+You can obtain a personal access token by going to https://hub.linaro.com/account or https://staginghub.linaro.com/account and clicking
+on the "Access tokens" tab. You can only request a token if you have been given permission
+to do so by your organization administrator.
 
 Choosing a subscription
 -----------------------
@@ -68,9 +68,9 @@ Choosing a subscription
 A LAVA subscription scopes what you can access. The subscription used for a
 command is resolved in the following order of precedence:
 
-#. The ``-s`` / ``--subscription`` flag.
-#. The ``LAVA_CLI_SUBSCRIPTION`` environment variable.
-#. The ``subscription_id`` stored in the selected configuration profile (see
+* The ``-s`` / ``--subscription`` flag.
+* The ``LAVA_CLI_SUBSCRIPTION`` environment variable.
+* The ``subscription_id`` stored in the selected configuration profile (see
    :ref:`configuration`).
 
 If no subscription can be resolved, the CLI stops with an error. Subscription

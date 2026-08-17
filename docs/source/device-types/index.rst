@@ -8,14 +8,9 @@ by every device of that type.
 
 Listing and showing device types is available to anyone with access to the
 subscription. Creating and updating device types, and changing templates or
-health-checks, require additional LMS (LAVA Management Service) permissions
-(``lms:admin`` or the relevant ``lms:create``/``lms:update`` right).
-
-.. note:: Device type names are resolved to an internal UUID before any
-   detail is fetched. If a name is not found, the CLI reports a combined
-   "not found or access denied" error. This is deliberate: it avoids
-   revealing whether a device type exists to callers who are not allowed to
-   see it.
+health-checks, require separate permissions. Visiting https://hub.linaro.com/device-types
+or https://staging-hub.linaro.com/device-types will display an informational banner
+if you do not have those additional permissions.
 
 .. toctree::
    :maxdepth: 1

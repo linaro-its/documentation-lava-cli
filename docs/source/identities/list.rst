@@ -3,9 +3,9 @@
 
 List the configuration profiles stored on this machine.
 
-With the ``--discover`` flag, the command instead authenticates, decodes your
-Biscuit token and queries SPIRE to show every subscription for which you hold
-LAVA rights. This is the easiest way to find a subscription ID to pass to
+With the ``--discover`` flag, the command instead authenticates and shows
+every subscription for which you hold LAVA rights. This is the easiest way
+to find a subscription ID to pass to
 :doc:`add`.
 
 Usage
@@ -56,6 +56,3 @@ printed. With ``--discover``, a table of ``SUBSCRIPTION ID``, ``NAME`` and
 
 If no profiles are configured, the command suggests running
 ``lava-cli identities add``.
-
-.. note:: **TODO:** Add example table output for both the default listing and
-   the ``--discover`` listing.

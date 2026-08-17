@@ -3,8 +3,8 @@
 Installing the CLI
 ==================
 
-The LAVA CLI is distributed as a single self-contained binary, built for
-Linux on both ``amd64`` and ``arm64`` architectures.
+The LAVA CLI is distributed as a single self-contained binary, built for Windows, MacOS, and
+Linux, on both ``amd64`` and ``arm64`` architectures.
 
 Where to download
 -----------------
@@ -64,15 +64,9 @@ Check that the CLI runs and reports its version:
 
    lava-cli --version
 
-.. note:: **TODO:** Add the expected ``lava-cli --version`` output once a release
-   version string is available.
-
 Upgrading
 ---------
 
 The CLI checks GitHub for newer releases and will notify you on stderr when a
 newer version is available. To upgrade, download and replace the binary using
 the same steps as the initial installation.
-
-.. note:: **TODO:** Document any dedicated self-update command or flag if one
-   is added. At present, upgrading is a manual re-download.

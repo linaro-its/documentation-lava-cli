@@ -38,5 +38,3 @@ Output
 
 A table of ``DEVICE TYPE`` and the number of ``DEVICES`` of that type. If no
 device types are available, a message says so.
-
-.. note:: **TODO:** Add example table output.

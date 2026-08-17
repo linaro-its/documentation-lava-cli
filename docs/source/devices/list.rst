@@ -3,11 +3,10 @@
 
 List the LAVA devices in the current subscription.
 
-The command resolves devices in two phases. First it queries SPIRE for the
-device-under-test resources in your subscription to obtain hostnames. Then it
-enriches each hostname with live health, state and device-type information
-from the Gateway. The ``--fast`` flag skips the second phase and shows
-hostnames only, which is quicker when you only need the list of names.
+The command resolves devices in two phases. First, the devices in your subscription
+are determined. Second, for each device, the live health, state and device type
+information is retrieved. The ``--fast`` flag skips the second phase and shows
+device names only, which is quicker when you only need the list of names.
 
 Usage
 -----
@@ -57,6 +56,3 @@ The default table shows ``HOSTNAME``, ``DEVICE TYPE``, ``WORKER``,
 If some devices cannot be accessed (the Gateway returns "access denied" for
 them), those devices are omitted and a count of hidden devices is printed to
 stderr. If the subscription has no devices, a message says so.
-
-.. note:: **TODO:** Add example table output for the default and ``--fast``
-   listings.
