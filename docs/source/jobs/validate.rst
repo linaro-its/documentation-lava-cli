@@ -49,6 +49,3 @@ Output
 ------
 
 The validation message returned by LAVA is printed to standard output.
-
-.. note:: **TODO:** Add an example of the validation message for both a valid
-   and an invalid definition.

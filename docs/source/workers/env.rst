@@ -15,6 +15,3 @@ Subcommands
 
 ``lava-cli workers env set <hostname> <file>``
    Intended to set a worker's environment from a file.
-
-.. note:: **TODO:** Document the behaviour, flags and output once these
-   commands are implemented.

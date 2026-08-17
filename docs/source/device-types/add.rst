@@ -55,5 +55,3 @@ Output
 On success the command confirms the device type was created and prints its
 metadata (``name``, ``verbose-name``, ``uuid``, ``visibility``,
 ``description``, ``tags`` and ``perms``).
-
-.. note:: **TODO:** Document the accepted ``--visibility`` values.

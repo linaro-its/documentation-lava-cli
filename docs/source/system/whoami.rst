@@ -40,5 +40,3 @@ Output
 A key/value listing of the active ``identity`` (profile name) and
 ``active-subscription``, followed by a table of all subscriptions your
 account can access showing ``SUBSCRIPTION ID``, ``NAME`` and ``PLAN``.
-
-.. note:: **TODO:** Add example output.

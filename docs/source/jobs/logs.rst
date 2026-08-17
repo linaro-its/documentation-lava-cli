@@ -84,5 +84,3 @@ Output
 
 Formatted log lines are printed to stdout. When following, pre-running state
 transitions (for example queued or scheduling) are printed to stderr.
-
-.. note:: **TODO:** Add an example of the formatted log output.

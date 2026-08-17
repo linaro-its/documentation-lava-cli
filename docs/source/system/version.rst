@@ -12,5 +12,3 @@ To see the *CLI* version rather than the server version, use the global
 .. code-block:: bash
 
    lava-cli --version
-
-.. note:: **TODO:** Document the output once the command is implemented.

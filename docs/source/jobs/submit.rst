@@ -99,5 +99,3 @@ Output
 While following, the submitted job ID (or URL with ``--url``) is written to
 stderr and the formatted logs stream to stdout. With ``--no-follow`` the job
 ID (or URL) is written to stdout.
-
-.. note:: **TODO:** Add an example of the streamed log output.

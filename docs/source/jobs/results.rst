@@ -64,5 +64,3 @@ Output
 A table of ``SUITE``, ``NAME``, ``RESULT``, ``MEASUREMENT`` and ``UNIT``.
 Measurement and unit are only present for tests that record a measurement. If
 no results match, a message says so.
-
-.. note:: **TODO:** Add example table output.

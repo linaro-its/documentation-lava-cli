@@ -65,6 +65,3 @@ By default a table of ``ID``, ``STATE``, ``HEALTH``, ``SUBMITTER``,
 ``DESCRIPTION`` and ``DEVICE TYPE``. With ``--verbose``, additional
 ``DEVICE``, ``STARTED`` and ``FINISHED`` columns are shown. If no jobs match,
 a message says so.
-
-.. note:: **TODO:** Add example table output and confirm the accepted values
-   for ``--ordering``, ``--health`` and ``--state``.

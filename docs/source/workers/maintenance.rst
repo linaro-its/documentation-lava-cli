@@ -34,7 +34,3 @@ Output
 ------
 
 On success the command confirms that the worker was set to maintenance.
-
-.. note:: **TODO:** Document how a worker is returned from maintenance to
-   active service (whether that is via a flag on this command or a separate
-   command). The current implementation only sets maintenance mode.

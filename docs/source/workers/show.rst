@@ -49,5 +49,3 @@ Output
 
 A key/value listing of ``hostname``, ``state``, ``health``, ``description``,
 ``last-ping`` (when the worker last contacted the server) and ``version``.
-
-.. note:: **TODO:** Add an example of the key/value output for a worker.

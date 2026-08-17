@@ -14,8 +14,8 @@ When you run a command that calls the API, the CLI performs a three-step
 flow:
 
 #. It exchanges your **email address** and **personal access token (PAT)**
-   with SPIRE for your full authorization token.
-#. It reads the LAVA subscription rights out of that token.
+   with SPIRE (the backend for Linaro's Solutions Hub) for your full authorization token.
+#. It reads your LAVA subscription rights from that token.
 #. It exchanges the full token for an authorization token that is scoped to the specific subscription,
    which authorises every call the command makes to the Gateway.
 

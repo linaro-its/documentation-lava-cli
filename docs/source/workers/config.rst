@@ -15,6 +15,3 @@ Subcommands
 
 ``lava-cli workers config set <hostname> <file>``
    Intended to set a worker's configuration from a file.
-
-.. note:: **TODO:** Document the behaviour, flags and output once these
-   commands are implemented.

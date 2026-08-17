@@ -86,6 +86,3 @@ Each observed ``state=… health=…`` transition is printed. When the target
 condition is met, a summary line is printed and the command exits ``0``. If
 the timeout elapses first, the last-observed state is printed to stderr and
 the command exits ``1``.
-
-.. note:: **TODO:** Confirm and document the full set of valid ``--state`` and
-   ``--health`` values for devices and workers.

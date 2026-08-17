@@ -37,5 +37,3 @@ Output
 
 A table of ``HOSTNAME``, ``STATE`` and ``HEALTH``. If no workers are
 available, a message says so.
-
-.. note:: **TODO:** Add example table output.
