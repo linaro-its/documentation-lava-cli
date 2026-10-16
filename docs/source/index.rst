@@ -44,5 +44,6 @@ below.
    jobs/index
    events/index
    system/index
+   mcp/index
    utils/index
    ci/index
