@@ -217,17 +217,27 @@ Workers
      - Parameters
      - Read-only/Write
    * - ``workers_list``
-     - List shared workers accessible to this subscription: hostname,
-       state, health, description. Equivalent to ``lava-cli workers
-       list``.
+     - List workers accessible to this subscription: hostname, appliance
+       name, state, health, description. Covers both shared LAVA workers
+       and LAA-backed workers (Linaro Automation Appliances) in one list
+       — there is no separate tool for appliances. Equivalent to
+       ``lava-cli workers list``.
      - *(none)*
      - Read-only
    * - ``worker_show``
-     - Show details for one shared worker: state, health, description,
-       last ping, version. Equivalent to ``lava-cli workers show
-       <hostname>``.
+     - Show details for one worker, identified by its worker hostname
+       (shared worker or LAA-backed worker): appliance name, state,
+       health, description, last ping, version. Equivalent to
+       ``lava-cli workers show <hostname>``.
      - ``hostname`` (required)
      - Read-only
+
+``hostname`` is the LAVA worker hostname (e.g. ``laa-00046``).
+``appliance_name`` is the LMS display name of the Linaro Automation
+Appliance behind that worker (e.g. ``laa-46-remi-starterkv260``) — a
+separate identifier assigned in a different system, not derived from the
+hostname — and is ``null`` for shared workers that have no dedicated
+appliance.
 
 Documentation
 -------------

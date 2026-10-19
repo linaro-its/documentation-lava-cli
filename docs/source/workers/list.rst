@@ -1,7 +1,11 @@
 ``lava-cli workers list``
 =========================
 
-List the LAVA shared workers accessible to the current subscription.
+List the LAVA workers accessible to the current subscription. This
+includes both shared LAVA workers and workers backed by a Linaro
+Automation Appliance (LAA) — LAVA itself makes no distinction between the
+two (every device has a worker, whichever kind runs it), so this one
+command covers both.
 
 Usage
 -----
@@ -35,5 +39,11 @@ Examples
 Output
 ------
 
-A table of ``HOSTNAME``, ``STATE`` and ``HEALTH``. If no workers are
-available, a message says so.
+A table of ``HOSTNAME``, ``APPLIANCE``, ``STATE`` and ``HEALTH``. If no
+workers are available, a message says so.
+
+``HOSTNAME`` is the LAVA worker hostname (e.g. ``laa-00046``). ``APPLIANCE``
+is the LMS display name of the Linaro Automation Appliance behind that
+worker (e.g. ``laa-46-remi-starterkv260``) — a separate identifier assigned
+in a different system, not derived from the hostname — and is blank for
+shared workers that have no dedicated appliance.
