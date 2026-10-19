@@ -48,6 +48,14 @@ Output
 ------
 
 A key/value listing of the device's properties: ``hostname``,
-``device-type``, ``worker``, ``state``, ``health``, ``description``,
-``pipeline``, ``has-device-dict``, ``current-job`` (the job currently running
-on the device, if any) and ``tags``.
+``device-type``, ``worker``, ``appliance-name``, ``state``, ``health``,
+``description``, ``pipeline``, ``has-device-dict``, ``current-job`` (the job
+currently running on the device, if any) and ``tags``.
+
+``worker`` is the LAVA worker hostname (e.g. ``laa-00046``) that runs the
+device. ``appliance-name`` is the LMS display name of the Linaro Automation
+Appliance backing that worker (e.g. ``laa-46-remi-starterkv260``) — the two
+are independent identifiers assigned in different systems and are not
+derived from one another. The ``appliance-name`` row is only shown for
+devices backed by a dedicated appliance; it is omitted entirely for devices
+on a shared LAVA worker.

@@ -51,7 +51,15 @@ Output
 ------
 
 The default table shows ``HOSTNAME``, ``DEVICE TYPE``, ``WORKER``,
-``HEALTH`` and ``STATE``. With ``--fast`` only ``HOSTNAME`` is shown.
+``APPLIANCE``, ``HEALTH`` and ``STATE``. With ``--fast`` only ``HOSTNAME``
+is shown.
+
+``WORKER`` is the LAVA worker hostname (e.g. ``laa-00046``) that runs the
+device. ``APPLIANCE`` is the LMS display name of the Linaro Automation
+Appliance backing that worker (e.g. ``laa-46-remi-starterkv260``) — the two
+are independent identifiers assigned in different systems and are not
+derived from one another. ``APPLIANCE`` is blank for devices on a shared
+LAVA worker, since those are not backed by a dedicated appliance.
 
 If some devices cannot be accessed (the Gateway returns "access denied" for
 them), those devices are omitted and a count of hidden devices is printed to

@@ -126,13 +126,14 @@ Devices
      - Read-only/Write
    * - ``devices_list``
      - List devices in this subscription: hostname, device type, worker,
-       health, and state. Equivalent to ``lava-cli devices list``.
+       appliance name, health, and state. Equivalent to ``lava-cli devices
+       list``.
      - ``all`` (optional, include retired devices)
      - Read-only
    * - ``device_show``
-     - Show details for one device: device type, worker, health, state,
-       description, and tags. Equivalent to ``lava-cli devices show
-       <hostname>``.
+     - Show details for one device: device type, worker, appliance name,
+       health, state, description, and tags. Equivalent to ``lava-cli
+       devices show <hostname>``.
      - ``hostname`` (required)
      - Read-only
    * - ``device_tags``
@@ -146,6 +147,14 @@ Devices
      - ``hostname`` (required), ``health`` (required, ``Maintenance`` or
        ``Good``)
      - Write
+
+``worker`` and ``appliance_name`` are distinct identifiers: ``worker`` is
+the LAVA worker hostname (e.g. ``laa-00046``), assigned when the dispatcher
+was registered with LAVA. ``appliance_name`` is the LMS display name of the
+Linaro Automation Appliance behind that worker (e.g.
+``laa-46-remi-starterkv260``), and is ``null`` for devices on a shared LAVA
+worker rather than a dedicated appliance. The two names are not derived
+from each other.
 
 Device types
 ------------
